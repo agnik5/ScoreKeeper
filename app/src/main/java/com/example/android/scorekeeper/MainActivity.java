@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    //initial values for score variables
     int scoreFlames = 0;
     int scoreSirin = 0;
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         displayForSirin(0);
     }
 
-//Methods adding points for Flames of Bellydance
+    //Methods adding points for Flames of Bellydance
 
     public void addFiveForFlames(View view) {
         scoreFlames = scoreFlames + 5;
@@ -45,16 +45,18 @@ public class MainActivity extends AppCompatActivity {
         displayForFlames(scoreFlames);
     }
 
-//    Methods adding points for Sirin Tribe
+    //Methods adding points for Sirin Tribe
 
     public void addFiveForSirin(View view) {
         scoreSirin = scoreSirin + 5;
         displayForSirin(scoreSirin);
     }
+
     public void addFourForSirin(View view) {
         scoreSirin = scoreSirin + 4;
         displayForSirin(scoreSirin);
     }
+
     public void addThreeForSirin(View view) {
         scoreSirin = scoreSirin + 3;
         displayForSirin(scoreSirin);
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         displayForSirin(scoreSirin);
     }
 
-//    This method resets the score for both teams
+    //Method that resets the score for both teams
 
     public void resetScore(View view) {
         scoreFlames = 0;
@@ -79,17 +81,15 @@ public class MainActivity extends AppCompatActivity {
         displayForSirin(scoreSirin);
     }
 
-    /**
-     * Displays the given score for Team A.
-     */
+    //Displays the given score for Flames of Bellydance
+
     public void displayForFlames(int score) {
         TextView scoreView = (TextView) findViewById(R.id.flames_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    /**
-     * Displays the given score for Team B.
-     */
+    //Displays the given score for Sirin Tribe
+
     public void displayForSirin(int score) {
         TextView scoreView = (TextView) findViewById(R.id.sirin_score);
         scoreView.setText(String.valueOf(score));
