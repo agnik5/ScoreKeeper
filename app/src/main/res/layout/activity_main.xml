@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/body2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="com.example.android.courtcounter.MainActivity"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Flames of Bellydance"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/flames_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:paddingBottom="8dp"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="32sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Technique"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForFlames"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForFlames"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForFlames"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForFlames"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForFlames"
+                    android:text="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Choreography"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForFlames"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForFlames"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForFlames"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForFlames"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForFlames"
+                    android:text="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Appearance"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForFlames"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForFlames"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForFlames"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForFlames"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForFlames"
+                    android:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Synchronization"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForFlames"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForFlames"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForFlames"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForFlames"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForFlames"
+                    android:text="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Formations"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForFlames"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForFlames"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForFlames"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForFlames"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForFlames"
+                    android:text="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-bold"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="Sirin Tribe"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/sirin_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:paddingBottom="8dp"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Technique"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForSirin"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForSirin"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForSirin"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForSirin"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForSirin"
+                    android:text="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Choreography"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForSirin"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForSirin"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForSirin"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForSirin"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForSirin"
+                    android:text="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Appearance"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForSirin"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForSirin"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForSirin"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForSirin"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForSirin"
+                    android:text="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Synchronization"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForSirin"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForSirin"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForSirin"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForSirin"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForSirin"
+                    android:text="1" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Formations"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFiveForSirin"
+                    android:text="5" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addFourForSirin"
+                    android:text="4" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addThreeForSirin"
+                    android:text="3" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addTwoForSirin"
+                    android:text="2" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:onClick="addOneForSirin"
+                    android:text="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:onClick="resetScore"
+        android:text="Reset" />
+</RelativeLayout>
