@@ -8,4 +8,74 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TeamLinearLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="VerticalLine">
+        <item name="android:layout_width">2dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:background">#fff</item>
+    </style>
+
+    <style name="TextTeamName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextScoreField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextCategoryName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ButtonsLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ScoreButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="ResetButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
 </resources>
